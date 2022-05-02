@@ -1,0 +1,168 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    padding: 0.5% 0%;
+    background-image: linear-gradient(
+        to right,
+        rgb(46, 95, 199) 0%,
+        rgb(43, 22, 133)
+    );    
+}
+
+header h1 {
+    text-align: center;
+    font-weight: bold;
+    color: white;  
+}
+
+main {
+    width: 100%;
+    height: 700px;
+    padding: 0% 1%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#searchContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 95%;
+    width: 22%;
+}
+
+#searchForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex: 0 0 100%;
+    height: 25%;
+}
+
+#searchForm h2 {
+    flex: 0 0 100%;
+    font-weight: bold;
+}
+
+#searchCity {
+    flex: 0 0 100%;
+    height: 25%;
+    border-radius: 5px;
+}
+
+#search-btn {
+    flex: 0 0 100%;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#search-btn:hover {
+    background-color: darkblue;
+}
+
+#lastSearch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-self: flex-end;
+    align-content: flex-start;
+    gap: 2%;
+    flex: 0 0 100%;
+    height: 70%;
+}
+
+.history-btns {
+    flex: 0 0 100%;
+    height: 9%;
+    background-color: silver;
+    border: none;
+    border-radius: 5px;
+}
+
+.history-btns:hover {
+    background-color: gray;
+}
+
+#search-btn:active, .history-btns:active {
+    box-shadow: 0px 0px 10px 5px orange;
+}
+
+#todayWeather {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    flex: 0 0 30%;
+    width: 73%;
+    border: solid 1px black;
+    background-color: lightskyblue;
+    visibility: hidden;
+}
+
+#todayWeather h2 {
+    font-weight: bold;
+    padding: 0% 1%;
+}
+
+#todayWeather ul {
+    padding: 0% 1%;
+}
+
+#todayWeather ul li {
+    font-size: 20px;
+    list-style: none;
+}
+
+#uvi {
+    padding: 0.5%;
+    border-radius: 5px;
+}
+
+#fiveDayForecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex: 0 0 56%;
+    width: 73%;
+    line-height: 2;
+    visibility: hidden;
+}
+
+#fiveDayForecast h3 {
+    flex: 0 0 100%;
+    height: 10%;
+    font-weight: bold;
+}
+
+.frcst-cards {
+    flex: 0 0 18%;
+    height: 50%;
+    background-color: lightskyblue;
+    color: Black;
+    align-self: flex-start;
+}
+
+.frcst-dates {
+    padding: 0 5%;
+    font-weight: bold;
+}
+
+
+
+.frcst-weather {
+    padding: 0% 5%;
+}
+
+.frcst-weather li {
+    list-style: none;
+}
